@@ -1,9 +1,10 @@
 class Movie
-  attr_accessor :title
+  attr_accessor :title, :url, :rating, :runtime, :summary
   @@all = []
   
-  def initialize(title)
+  def initialize(title, url)
     @title = title
+    @url = url
     @@all << self
   end
   
